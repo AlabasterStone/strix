@@ -32,6 +32,10 @@ Thank you for your interest in contributing to Strix! This guide will help you g
    ```bash
    export STRIX_LLM="openai/gpt-5"
    export LLM_API_KEY="your-api-key"
+   
+   # Or use GitHub Copilot (OAuth token from: gh auth token)
+   export STRIX_LLM="github_copilot/gpt-4o"
+   export GITHUB_COPILOT_TOKEN="ghu_your_oauth_token"
    ```
 
 4. **Run Strix in development mode**

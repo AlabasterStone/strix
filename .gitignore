@@ -31,7 +31,10 @@ pip-delete-this-directory.txt
 
 # IDE
 .idea/
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/README.md
 *.swp
 *.swo
 .DS_Store

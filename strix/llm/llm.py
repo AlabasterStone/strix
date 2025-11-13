@@ -24,10 +24,12 @@ from strix.tools import get_tools_prompt
 
 logger = logging.getLogger(__name__)
 
+# Configure API key (supports multiple environment variables)
 api_key = os.getenv("LLM_API_KEY")
 if api_key:
     litellm.api_key = api_key
 
+# Configure API base URL
 api_base = (
     os.getenv("LLM_API_BASE")
     or os.getenv("OPENAI_API_BASE")
@@ -36,6 +38,13 @@ api_base = (
 )
 if api_base:
     litellm.api_base = api_base
+
+# Configure GitHub Copilot OAuth token
+# GitHub Copilot uses OAuth tokens (ghu_*) for authentication
+github_copilot_token = os.getenv("GITHUB_COPILOT_TOKEN")
+if github_copilot_token:
+    os.environ["GITHUB_COPILOT_API_KEY"] = github_copilot_token
+    logger.info("GitHub Copilot token configured")
 
 
 class LLMRequestFailedError(Exception):

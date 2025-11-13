@@ -188,9 +188,12 @@ export LLM_API_KEY="your-api-key"
 # Optional
 export LLM_API_BASE="your-api-base-url"  # if using a local model, e.g. Ollama, LMStudio
 export PERPLEXITY_API_KEY="your-api-key"  # for search capabilities
+export GITHUB_COPILOT_TOKEN="ghu_token"   # for GitHub Copilot models (github_copilot/model-name)
 ```
 
 [OpenAI's GPT-5](https://openai.com/api/) (`openai/gpt-5`) and [Anthropic's Claude Sonnet 4.5](https://claude.com/platform/api) (`anthropic/claude-sonnet-4-5`) work best with Strix, but we support many [other options](https://docs.litellm.ai/docs/providers).
+
+You can also use [GitHub Copilot](docs/GITHUB_COPILOT.md) models (`github_copilot/gpt-4o`, `github_copilot/claude-3.5-sonnet`, etc.) - see the [GitHub Copilot guide](docs/GITHUB_COPILOT.md) for setup instructions.
 
 ## 🤝 Contributing
 
