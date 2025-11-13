@@ -1,0 +1,33 @@
+{
+  "recommendations": [
+    // GitHub Copilot
+    "github.copilot",
+    "github.copilot-chat",
+    
+    // Python development
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+    
+    // Testing
+    "littlefoxteam.vscode-python-test-adapter",
+    
+    // Git
+    "eamodio.gitlens",
+    
+    // Documentation
+    "njpwerner.autodocstring",
+    
+    // YAML and configuration files
+    "redhat.vscode-yaml",
+    
+    // Jinja templates (used for prompts)
+    "wholroyd.jinja",
+    
+    // Docker
+    "ms-azuretools.vscode-docker",
+    
+    // Markdown
+    "yzhang.markdown-all-in-one"
+  ]
+}
