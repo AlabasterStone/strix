@@ -10,7 +10,7 @@ Strix is an autonomous AI-powered security testing framework that acts like real
 
 - **Language**: Python 3.12+
 - **Dependency Management**: Poetry
-- **AI/LLM**: LiteLLM (supports OpenAI, Anthropic, and other providers)
+- **AI/LLM**: LiteLLM (supports OpenAI, Anthropic, GitHub Copilot, and other providers)
 - **Web Framework**: FastAPI
 - **Browser Automation**: Playwright
 - **Testing**: pytest with pytest-asyncio, pytest-cov
