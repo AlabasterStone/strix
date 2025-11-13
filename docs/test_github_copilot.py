@@ -8,6 +8,9 @@ This script tests that:
 3. Environment variables are set correctly
 
 Note: This test doesn't require Strix dependencies to be installed.
+
+Security Note: This script uses test tokens (not real credentials) for demonstration
+purposes. All token values are masked in output to prevent accidental exposure.
 """
 
 import os
@@ -18,6 +21,7 @@ def test_github_copilot_token_logic():
     print("Testing GitHub Copilot OAuth token configuration logic...")
 
     # Simulate the logic from strix/llm/llm.py
+    # Using test token for demonstration only - not a real credential
     test_token = "ghu_test_oauth_token_12345"
     os.environ["GITHUB_COPILOT_TOKEN"] = test_token
 
