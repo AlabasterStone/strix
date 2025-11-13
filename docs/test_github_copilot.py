@@ -34,13 +34,14 @@ def test_github_copilot_token_logic():
 
     if github_copilot_api_key == test_token:
         print("✓ GitHub Copilot token configuration logic works correctly")
-        print(f"  GITHUB_COPILOT_TOKEN: {github_copilot_token}")
-        print(f"  GITHUB_COPILOT_API_KEY: {github_copilot_api_key}")
+        # Mask tokens in output for security
+        print(f"  GITHUB_COPILOT_TOKEN: {github_copilot_token[:10]}...")
+        print(f"  GITHUB_COPILOT_API_KEY: {github_copilot_api_key[:10]}...")
         return True
     else:
-        print(f"✗ GitHub Copilot token not set correctly.")
-        print(f"  Expected: {test_token}")
-        print(f"  Got: {github_copilot_api_key}")
+        print("✗ GitHub Copilot token not set correctly.")
+        print(f"  Expected: {test_token[:10]}...")
+        print(f"  Got: {github_copilot_api_key[:10] if github_copilot_api_key else 'None'}...")
         return False
 
 
